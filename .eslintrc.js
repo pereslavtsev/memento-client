@@ -29,11 +29,5 @@ module.exports = {
         project: ['./test/tsconfig.json'],
       },
     },
-    {
-      files: ['scripts/**'],
-      parserOptions: {
-        project: ['./scripts/tsconfig.json'],
-      },
-    },
   ],
 };

@@ -2,7 +2,7 @@ import { MementoClient } from '../src';
 
 jest.setTimeout(30 * 1000);
 
-describe('AppController (e2e)', () => {
+describe('Mementos (e2e)', () => {
   let client: MementoClient;
 
   beforeAll(() => {

@@ -1,7 +1,6 @@
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
-import { plainToClass } from 'class-transformer';
-import { MementosResponse } from '../classes';
 import { MementoUri } from './uri';
+import { debug } from '../utils';
 
 export type MementoClientOptions =
   | Pick<AxiosRequestConfig, 'baseURL' | 'timeout'>
@@ -36,7 +35,7 @@ export class MementoClient {
   }
 
   protected onResponse(response: AxiosResponse) {
-    response.data = plainToClass(MementosResponse, response.data);
+    debug('response data %o', response.data);
     return response;
   }
 

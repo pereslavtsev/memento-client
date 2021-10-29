@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
+    "lint:fix": "eslint . --fix",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
@@ -16,10 +18,12 @@
   "dependencies": {
     "axios": "^0.24.0",
     "class-transformer": "^0.4.0",
+    "debug": "^4.3.2",
     "luxon": "^2.0.2",
     "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
+    "@types/debug": "^4.1.7",
     "@types/jest": "^27.0.2",
     "@types/luxon": "^2.0.5",
     "@typescript-eslint/eslint-plugin": "4.28.2",

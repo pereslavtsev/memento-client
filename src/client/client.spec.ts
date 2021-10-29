@@ -1,6 +1,5 @@
 import { MementoClient } from './client';
-
-const API_URL = 'https://test.localhost';
+import { API_URL } from '../../test/constants';
 
 describe('Client', () => {
   describe('create from url', () => {
