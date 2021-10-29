@@ -1,5 +1,5 @@
-import { formatDate } from './helpers/datetime.helpers';
-import type { MementoClient } from './client/client';
+import { formatDate } from '../helpers/datetime.helpers';
+import type { MementoClient } from './client';
 
 export class MementoUri {
   constructor(

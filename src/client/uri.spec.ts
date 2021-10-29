@@ -1,4 +1,4 @@
-import { MementoClient } from './client/client';
+import { MementoClient } from './client';
 import { MementoUri } from './uri';
 
 const API_URL = 'https://test.localhost';

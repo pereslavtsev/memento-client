@@ -1,7 +1,7 @@
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
 import { plainToClass } from 'class-transformer';
 import { MementosResponse } from '../classes';
-import { MementoUri } from '../uri';
+import { MementoUri } from './uri';
 
 export type MementoClientOptions =
   | Pick<AxiosRequestConfig, 'baseURL' | 'timeout'>
