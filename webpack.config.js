@@ -1,24 +1,24 @@
 const path = require('path');
+const nodeExternals = require('webpack-node-externals');
 
 module.exports = {
   entry: path.resolve(__dirname, './src/index.ts'),
+  mode: 'production',
+  target: 'node',
   module: {
     rules: [
       {
-        test: /\.(ts)$/,
+        test: /\.tsx?$/,
+        use: 'ts-loader',
         exclude: /node_modules/,
-        use: ['babel-loader']
-      }
+      },
     ]
   },
   resolve: {
     extensions: ['*', '.ts']
   },
-  output: {
-    path: path.resolve(__dirname, './dist'),
-    filename: 'bundle.js',
-  },
-  devServer: {
-    contentBase: path.resolve(__dirname, './dist'),
-  },
+  externals: [nodeExternals()],
+  // devServer: {
+  //   contentBase: path.resolve(__dirname, './dist'),
+  // },
 };
