@@ -6,3 +6,4 @@
 /coverage
 
 webpack.config.js
+dts-gen.js

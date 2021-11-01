@@ -1,5 +1,7 @@
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const NpmDtsPlugin = require('npm-dts-webpack-plugin');
 
 module.exports = {
   entry: path.resolve(__dirname, './src/index.ts'),
@@ -25,7 +27,11 @@ module.exports = {
     extensions: ['*', '.ts'],
   },
   externals: [nodeExternals()],
-  // devServer: {
-  //   contentBase: path.resolve(__dirname, './dist'),
-  // },
+  plugins: [
+    new CleanWebpackPlugin(),
+    new NpmDtsPlugin({
+      logLevel: 'warn',
+      output: './dist/main.d.ts',
+    }),
+  ],
 };
