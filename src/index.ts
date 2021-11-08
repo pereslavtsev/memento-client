@@ -1,3 +1,4 @@
 import 'reflect-metadata';
 
-export * from './client';
+export { default } from './client';
+export type { MementoClientOptions } from './client';

@@ -1,9 +1,10 @@
 # compiled output
 /dist
+/lib
 /node_modules
 
 # Tests
 /coverage
 
+jest.config.js
 webpack.config.js
-dts-gen.js
