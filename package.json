@@ -15,7 +15,8 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json --runInBand",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prepublish": "pnpm build && pnpm prebuild"
   },
   "author": {
     "name": "Vitaly Pereslavtsev",
