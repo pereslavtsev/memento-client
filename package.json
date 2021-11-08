@@ -7,6 +7,7 @@
   "scripts": {
     "build": "webpack --mode=production",
     "dev": "webpack --mode=development --watch",
+    "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prebuild": "tsc --project tsconfig.typings.json",
     "test": "jest",
