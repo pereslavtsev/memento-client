@@ -10,8 +10,10 @@
 ## Installation
 ```bash
 $ npm install @mementoweb/client
+
 # or using yarn:
 $ yarn add @mementoweb/client
+
 # or using pnpm:
 $ pnpm add @mementoweb/client
 ```
