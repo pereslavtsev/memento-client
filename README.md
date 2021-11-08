@@ -3,8 +3,9 @@
 ![npm](https://img.shields.io/npm/v/@mementoweb/client)
 ![CircleCI](https://img.shields.io/circleci/build/github/pereslavtsev/memento-client/master)
 ![Coveralls](https://img.shields.io/coveralls/github/pereslavtsev/memento-client)
+![Codacy branch grade](https://img.shields.io/codacy/grade/61b09fff2cdf4575bfc3fcbf046a3812/master)
 
-[Time Travel APIs](http://timetravel.mementoweb.org/guide/api/) NodeJS library with full support of the Memento protocol.
+[Time Travel APIs](http://timetravel.mementoweb.org/guide/api/) NodeJS library with full support of the Memento protocol, originally adapted from [memento-client](https://github.com/jarofghosts/memento-client).
 
 ## Installation
 ```bash
