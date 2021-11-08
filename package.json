@@ -32,6 +32,9 @@
     "url": "https://github.com/pereslavtsev/memento-client.git"
   },
   "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "internet",
     "archive",
