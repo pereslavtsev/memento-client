@@ -9,14 +9,17 @@ jobs:
     steps:
       - checkout
       - node/install-packages:
-          pkg-manager: yarn
+          pkg-manager: pnpm
       - run:
-          command: yarn lint
+          command: pnpm lint
           name: Run linter
       - run:
-          command: yarn test:coverage
+          command: pnpm test:cov
           name: Run tests
       - coveralls/upload
+      - run:
+          command: pnpm test:e2e
+          name: Run e2e-tests
 workflows:
   test_lib:
     jobs:
