@@ -1,5 +1,9 @@
 # memento-client
 
+![npm](https://img.shields.io/npm/v/@mementoweb/client)
+![CircleCI](https://img.shields.io/circleci/build/github/pereslavtsev/memento-client/master)
+![Coveralls](https://img.shields.io/coveralls/github/pereslavtsev/memento-client)
+
 [Time Travel APIs](http://timetravel.mementoweb.org/guide/api/) NodeJS library with full support of the Memento protocol.
 
 ## Installation
