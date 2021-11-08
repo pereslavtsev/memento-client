@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run:
           name: Install pnpm
-          command: curl -L https://pnpm.js.org/pnpm.js | node - add --global pnpm
+          command: sudo npm i -g pnpm
       - run:
           name: Install Dependencies
           command: pnpm install --frozen-lockfile
