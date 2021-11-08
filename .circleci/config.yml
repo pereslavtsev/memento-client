@@ -8,8 +8,12 @@ jobs:
       - image: 'cimg/node:10.24.1'
     steps:
       - checkout
-      - node/install-packages:
-          pkg-manager: pnpm
+      - run:
+          name: Install pnpm
+          command: npm i -g pnpm
+      - run:
+          name: Install Dependencies
+          command: pnpm install --frozen-lockfile
       - run:
           command: pnpm lint
           name: Run linter
